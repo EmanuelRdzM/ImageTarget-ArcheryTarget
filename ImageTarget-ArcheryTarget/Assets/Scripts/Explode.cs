@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class explode : MonoBehaviour{
-    public GameObject explosion;
+public class Explode : MonoBehaviour{
+	public GameObject explosion;
     public GameObject enemyToSpawn;
     Vector3 killPos;
     Quaternion killRot;
@@ -23,4 +23,5 @@ public class explode : MonoBehaviour{
         Instantiate(enemyToSpawn, killPos, killRot);
 
     }
+
 }
