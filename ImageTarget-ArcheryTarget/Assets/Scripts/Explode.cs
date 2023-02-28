@@ -13,7 +13,7 @@ public class Explode : MonoBehaviour{
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.transform.tag == "Spider" && bulletCollission == false)
+        if(collision.transform.tag == "Beaver" && bulletCollission == false)
         {
             Destroy(collision.transform.gameObject); // destroy spider
             Scoring.score += 5;

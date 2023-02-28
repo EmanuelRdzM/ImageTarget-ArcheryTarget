@@ -16,5 +16,9 @@ public class Shoot : MonoBehaviour
             GameObject bullet = Instantiate(projectile, arCamera.position, arCamera.rotation) as GameObject;
             bullet.GetComponent<Rigidbody>().AddForce(arCamera.forward * shootForce);
         }
+        if(Input.GetKeyDown(KeyCode.Space)){
+        	GameObject bullet = Instantiate(projectile, arCamera.position, arCamera.rotation) as GameObject;
+            bullet.GetComponent<Rigidbody>().AddForce(arCamera.forward * shootForce);
+        }
     }
 }
