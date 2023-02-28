@@ -7,10 +7,11 @@ public class Explode : MonoBehaviour{
     public GameObject enemyToSpawn;
     Vector3 killPos;
     Quaternion killRot;
-    public float waitTime = 0.5f;
+    public float waitTime = 3.0f;
 
     private void OnCollisionEnter(Collision collision){
-        if(collision.transform.tag == "Target"){
+    	
+        if(collision.transform.tag == "Beaver"){
             Destroy(collision.transform.gameObject);
             killPos = collision.transform.position;
             killRot = collision.transform.rotation;
